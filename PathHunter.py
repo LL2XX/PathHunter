@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import os
 from urllib.parse import urljoin, urlparse
 import urllib3
 import random
