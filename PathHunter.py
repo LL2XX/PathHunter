@@ -1226,7 +1226,7 @@ def should_add_to_queue(url, base_url):
             return True
         
         # 检查是否与初始URL同域
-        if is_same_domain(url, base_url):
+        if is_same_domain(url, base_url) and ext not in ['.jpg','.jpeg','.svg','.png','.gif','.mp3','.mp4','.flv','.css','.woff','.woff2','.ico','.pdf','.doc','.docx','.ppt','.pptx','.zip','.exe']:
             return True
             
         return False
